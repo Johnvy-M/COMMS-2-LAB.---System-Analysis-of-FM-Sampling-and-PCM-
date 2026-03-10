@@ -212,7 +212,7 @@ The transition from analog to digital (and back) follows these core stages:
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/c94fda36-592a-4799-914a-5271649749cb.jpg" alt="PCM Encode">
 
 Complete Experiment 
-[Output Continuation]([https://github.com/Johnvy-M/COMMS-2-LAB.---Modulation-and-Coding-Techniques/blob/4d193168695c7dcfc34d5b17b948a5b39d625b83/Data%20%26%20Results/QUESTIONS%20AND%20ANSWERS%20(Exp%201-4%20Comms%202).pdf](https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/Exp12.COMS2.docx))
+[Output Continuation](https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/0067b2a9344d3019990ed403c6d92b585b566617/Exp%2012/Exp12.COMS2.pdf)
    
 
 
