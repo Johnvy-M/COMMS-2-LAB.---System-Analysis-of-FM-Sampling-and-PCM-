@@ -13,7 +13,7 @@ This is a laboratory report on Communication 2. In this report, viewers can see 
 * Summary 
 * Learnings
 
-## FM Modulation & Demodulation 
+## I - FM Modulation & Demodulation 
 While DSBSC and SSB systems are vulnerable to electrical noise—which interferes with signal amplitude—Frequency Modulation (FM) is more robust. Because FM demodulators track frequency changes rather than amplitude, they ignore the noise-induced "spikes" that plague other systems.
 
 ### Modulation Mechanics
@@ -43,7 +43,7 @@ Operating Principles:
 3. DC Extraction: Because the average DC voltage of a pulse train is directly proportional to its duty cycle, the resulting DC component becomes a replica of the original modulating signal.
 4. Low-Pass Filtering: A Low-Pass Filter (LPF) is used to extract this changing DC component, effectively recovering the original message, whether it is a sine wave or speech.
 
-#### FM Modulator & Demodulator Experiment equipment 
+### FM Modulator & Demodulator Experiment equipment 
 * Emona Telecom-Trainer 101 (plus power-pack)
 * Dual Channel 20Mhz oscilloscope
 * Two Emona Telecom-Trainer 101 oscilloscope leads
@@ -101,12 +101,14 @@ Operating Principles:
    </details>
 
 
-## Sampling and Reconstruction 
+## II - Sampling and Reconstruction 
 While modern communication increasingly relies on digital transmission for its superior noise resistance, analog messages (such as speech) must first be converted via sampling. This process involves measuring the analog signal's voltage at regular intervals using a digital sampling signal.
 
 ### Sampling Methods
 * Natural Sampling: The sampled signal follows the analog message's voltage for the duration of the sampling pulse.
 * Sample-and-Hold (PAM): The voltage is fixed at the instant of measurement, creating a "flat-top" pulse. This is often required for systems that cannot process fluctuating signal levels during a single sample.
+
+<img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2011/sampling.png" alt="Sampling">
 
 #### Mathematical Model and Recovery
 Sampling is mathematically defined as the multiplication of the message signal by the sampling signal:
@@ -117,7 +119,7 @@ This multiplication creates a complex output consisting of the original message 
 
 To recover the original message, the sampled signal is passed through a Low-Pass Filter (LPF). The filter rejects the high-frequency harmonics and sidebands, allowing only the original low-frequency message signal to pass through.
           
- #### Experiment Equipments 
+ ### Experiment Equipments 
  * Emona Telecom-Trainer 101 (plus power-pack)
  * Dual Channel 20Mhz oscilloscope
  * Two Emona Telecom-Trainer 101 oscilloscope leads
@@ -150,6 +152,67 @@ To recover the original message, the sampled signal is passed through a Low-Pass
 
   </details>
 
+
+## III - PCM Encoding & Decoding
+Pulse Code Modulation (PCM) is the standard method for converting analog signals into digital serial data. 
+
+### PCM Encoding 
+To convert an analog voltage into a binary stream, the encoder performs the following steps:
+1. Sampling: Measuring the analog signal’s voltage at discrete time intervals.
+2. Quantization: Comparing the sampled voltage to a set of fixed reference levels and selecting the nearest value.
+3. Encoding: Assigning a unique binary number to the chosen quantization level and outputting it serially.
+
+#### The accuracy of a PCM system depends on two critical parameters:
+* Sampling Rate & Aliasing: To accurately reconstruct the signal, the sampling frequency must be at least twice the highest frequency of the message signal (the Nyquist Rate). Failure to meet this results in aliasing.
+* Quantization Error: Since samples are rounded to the nearest quantization level, the original exact value is lost. This difference is known as quantization error. Increasing the number of levels reduces this error.
+
+#### The Emona PCM Encoder uses an 8-bit codec with the following specifications:
+* Voltage Range: $-2\text{V}$ to $+2\text{V}$.
+* Resolution: 8 bits ($2^8$), providing 256 distinct quantization levels.
+* Data Format: Bits are transmitted in frames, starting with the Most Significant Bit (bit-7) and ending with the Least Significant Bit (bit-0).
+* Synchronization: The module generates a Frame Synchronization (FS) signal that pulses high during bit-0, allowing an oscilloscope to trigger and align the data frames correctly.
+
+### PCM Decoding 
+Decoding recovers the original analog message from a digital serial stream. On the Emona Telecoms-Trainer 101, the process involves several key stages to transform 8-bit data back into a continuous waveform.
+
+#### The Decoding Sequence
+* Frame Identification: Locating the start of each 8-bit packet in the serial stream.
+* D/A Conversion: Translating the 8-bit binary number into a proportional voltage (e.g., $10000000_2$ results in $0\text{V}$).
+* Sample and Hold (PAM): Maintaining the voltage until the next frame arrives, creating a Pulse Amplitude Modulation signal.
+* Reconstruction: Passing the "staircase" PAM signal through a low-pass filter to recover the smooth original message.
+
+#### Synchronization Requirements
+The TIMS PCM Decoder is not self-clocking and requires external timing to function correctly:
+* Clock Synchronization: The decoder must use the exact same clock as the encoder (often "stolen" via a direct cable) to prevent reading bits twice or missing them entirely.
+* Frame Synchronization (FS): An external FS signal is required to identify the beginning of each frame. Without this, the bits are misaligned, and the output voltage will be incorrectly interpreted.
+
+### Encoding & Decoding Process
+The transition from analog to digital (and back) follows these core stages:
+1. Sampling & Quantization: The analog signal ($-2\text{V}$ to $+2\text{V}$) is sampled. Each sample is rounded to the nearest of 256 quantization levels.
+2. Serialization: The 8-bit binary value is transmitted bit-by-bit in frames, starting with the Most Significant Bit (MSB/bit-7).
+3. Reconstruction: The decoder converts these bits back into a Pulse Amplitude Modulation (PAM) signal. A low-pass filter then smooths the "staircase" PAM signal to recover the original waveform.
+
+
+### PCM Encoding & Decoding Experiment Equipment 
+* Emona Telecom-Trainer 101 (plus power-pack)
+* Dual Channel 20Mhz oscilloscope
+* Two Emona Telecom-Trainer 101 oscilloscope leads
+* Assorted Emona Telecom’s Trainer 101 patch leads
+* One set of headphones (Sterio)
+
+<details>
+  <summary>RESULTS in PCM Encoding</summary>
+
+  <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/09fedce5-bed5-4c6e-834e-c720a440f826.jpg" alt="PCM Encode">
+
+  <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/56ff2cdf-a905-49cb-bce7-511ff8da2c75.jpg" alt="PCM Encode">
+
+  <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/31687015-c47c-4b59-ae3d-e85fc642d4b9.jpg" alt="PCM Encode">
+
+  <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/c94fda36-592a-4799-914a-5271649749cb.jpg" alt="PCM Encode">
+
+Complete Experiment 
+[Output Continuation]([https://github.com/Johnvy-M/COMMS-2-LAB.---Modulation-and-Coding-Techniques/blob/4d193168695c7dcfc34d5b17b948a5b39d625b83/Data%20%26%20Results/QUESTIONS%20AND%20ANSWERS%20(Exp%201-4%20Comms%202).pdf](https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/Exp12.COMS2.docx))
    
 
 
