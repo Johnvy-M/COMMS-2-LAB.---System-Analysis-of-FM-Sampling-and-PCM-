@@ -281,7 +281,8 @@ Complete Experiment
    [Complete Experimental Questions and Answers]( https://github.com/EarlArugay/Telecommunications-Engineering-Modular-Analysis-of-Analog-FM-and-Digital-PCM-Architectures/blob/1106fcdf1f7cbfe0371ee50407b2318c254873f1/Data/Q%26A-Telecommunications-Engineering-Modular-Analysis-of-Analog-FM-and-Digital-PCM-Architectures-.pdf)
 
    ## VI - Learnings 
-   
+   In this experiment we clearly see that FM modulation is better compare to AM modulation overcoming the problem faced by it. The zero crossing detection is a clever way to demodulate the FM. It converts frequency changes into a pulse train where the duty cycle varies. Sampling is used to move the signal from the analog world to the digital world, and to convert them PCM is utilized. however, the integrity of this digital stream is constantly challenged by the channel's bandwidth; as a natural filter, the medium introduces amplitude attenuation and phase distortion that rounds the edges of square waves and shifts their constituent harmonics. 
+   Overall, Transitioning from analog system into digital system is composed of complex stages that needed to be done correctly. different techniques is used specifically to each phase of the process. Challenges faced by the signal transmission is being solve one by one throughout the process making the signal recieve clearly.  
 
 
 
