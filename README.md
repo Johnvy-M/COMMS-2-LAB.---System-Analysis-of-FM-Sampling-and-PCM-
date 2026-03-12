@@ -277,6 +277,12 @@ Complete Experiment
 
    </details>
 
+   ## V - Summary 
+   [Complete Experimental Questions and Answers]( https://github.com/EarlArugay/Telecommunications-Engineering-Modular-Analysis-of-Analog-FM-and-Digital-PCM-Architectures/blob/1106fcdf1f7cbfe0371ee50407b2318c254873f1/Data/Q%26A-Telecommunications-Engineering-Modular-Analysis-of-Analog-FM-and-Digital-PCM-Architectures-.pdf)
+
+   ## VI - Learnings 
+   
+
 
 
 
