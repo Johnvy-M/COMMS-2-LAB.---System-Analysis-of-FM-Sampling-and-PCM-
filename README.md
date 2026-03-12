@@ -55,24 +55,33 @@ Operating Principles:
   <summary>RESULTS in FM Modulator</summary>
 
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.1.jpg" alt="Modulator">
+  $FM-Squarewave$
   
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.2.jpg" alt="Modulator">
+   $FM-Squarewave$
   
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.3.jpg" alt="Modulator">
+  $Min. VCO$
   
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.4.jpg" alt="Modulator">
+  $Mid. VCO$
   
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.5.jpg" alt="Modulator">
+  $Max. VCO$
   
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.6.jpg" alt="Modulator">
   
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.7.jpg" alt="Modulator">
+   $Without-voice$
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.8.jpg" alt="Modulator">
+   $With-voice$
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.9.jpg" alt="Modulator">
+   <i>With 10khz voice</i>
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.10.jpg" alt="Modulator">
+   <i>with 5khz voice</i>
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/f378e541965ba37451978bb614b893e90962fdc4/Exp%209/9.11.jpg" alt="Modulator">
    
@@ -129,26 +138,36 @@ To recover the original message, the sampled signal is passed through a Low-Pass
   <summary>RESULTS</summary>
 
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.1.jpg" alt="Sampling">
+   <i>Without VDC</i>
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.2.jpg" alt="Sampling">
+   <i>with VDC</i>
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.3.jpg" alt="Sampling">
+ 
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.4.jpg" alt="Sampling">
+
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.5.jpg" alt="Sampling">
+
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.6.jpg" alt="Sampling">
+   <i>With direct voice</i>
    
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.7.jpg" alt="Sampling">
+   <i>without direct voice</i>
 
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.8.jpg" alt="Sampling">
+   <i>cut off</i>
 
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.9.jpg" alt="Sampling">
-
+  
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.10.jpg" alt="Sampling">
+   
 
    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/5b4df2d824e5ee28cc9dd43716f1d5e0767ec4ae/Exp%2011/11.11.jpg" alt="Sampling">
+ 
 
   </details>
 
@@ -206,15 +225,57 @@ The transition from analog to digital (and back) follows these core stages:
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/09fedce5-bed5-4c6e-834e-c720a440f826.jpg" alt="PCM Encode">
 
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/56ff2cdf-a905-49cb-bce7-511ff8da2c75.jpg" alt="PCM Encode">
+  <i>clock adjusted</i>
 
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/31687015-c47c-4b59-ae3d-e85fc642d4b9.jpg" alt="PCM Encode">
+  <i>synchronize</i>
 
   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/23952d2782739c11364ed5e8dcec5f8bd32646ba/Exp%2012/c94fda36-592a-4799-914a-5271649749cb.jpg" alt="PCM Encode">
+  <i>adjusted time</i>
 
 Complete Experiment 
 [Output Continuation](https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/0067b2a9344d3019990ed403c6d92b585b566617/Exp%2012/Exp12.COMS2.pdf)
-   
 
+</details>
+
+<details>
+  <summary>RESULTS in PCM Decoding</summary>
+ 
+   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/06c5e80d948165ffa29717e1d77a026485766e11/Exp%2013/FIGURE%202.png" alt="PCM Decode">
+   
+   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/06c5e80d948165ffa29717e1d77a026485766e11/Exp%2013/FIGURE%203.png" alt="PCM Decode">
+
+   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/06c5e80d948165ffa29717e1d77a026485766e11/Exp%2013/FIGURE%204.png" alt="PCM Decode">
+
+   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/06c5e80d948165ffa29717e1d77a026485766e11/Exp%2013/fig%205.png" alt="PCM Decode">
+
+   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/06c5e80d948165ffa29717e1d77a026485766e11/Exp%2013/fig%2010.png" alt="PCM Decode">
+
+   </details>
+
+   ## IV - Bandwidth Limiting and Restoring Digital Signals
+   In the classical communications model, a transmitter sends a message to a receiver through a channel (such as copper wire, fiber optics, or airwaves). However, every channel acts as a natural filter with a specific bandwidth, leading to two primary      types of distortion:
+   1. Amplitude Distortion (Attenuation)
+      All channels attenuate frequencies outside their bandwidth. Since both analog (AM) and digital signals are composed of multiple sine waves (harmonics), a narrow bandwidth filters out these essential components. For digital signals, losing higher harmonics rounds off the edges of square waves, making it difficult for a receiver to distinguish between logic levels.
+   2. Channels also shift the phase of different sine waves by varying amounts. Even if the amplitude is maintained, a phase shift (e.g., 180°) alters how these waves recombine, further warping the signal's shape.
+
+   ### Consequences for Digital Systems
+   In systems like Pulse Code Modulation (PCM), these distortions lead to "noisy" recovery. If the signal shape is too degraded, the decoder misinterprets the logic levels, resulting in bit errors and incorrect voltage generation.
+
+   ### Experiment Equipment 
+   * Emona Telecom-Trainer 101 (plus power-pack)
+   * Dual Channel 20Mhz oscilloscope
+   * Two Emona Telecom-Trainer 101 oscilloscope leads
+   * Assorted Emona Telecom’s Trainer 101 patch leads
+   * One set of headphones (Sterio)
+
+   <details>
+  <summary>RESULTS</summary>
+    <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/c59acad71279a8863070bbad441eecbe52d09949/Exp%2014/14BPART1.png" alt="Limiting and restoring">
+
+   <img src="https://github.com/Johnvy-M/COMMS-2-LAB.---System-Analysis-of-FM-Sampling-and-PCM-/blob/c59acad71279a8863070bbad441eecbe52d09949/Exp%2014/14BPART2.png" alt="Limiting and restoring">
+
+   </details>
 
 
 
